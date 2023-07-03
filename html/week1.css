@@ -1,0 +1,41 @@
+.frame{
+    display:flex;
+}
+.left{
+    flex:none;
+    width:50%;
+    font-size: 20px;
+}
+.right{
+    display:flex;
+    justify-content:flex-end;
+    flex:auto;
+}
+.item{
+    flex:none;
+    width:100px;
+    margin-right:10px;
+    text-align: center;
+    font-size: 20px;
+}
+.welcome{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+    background-color: lightblue;
+}
+.text{
+    font-size: 40px;
+    font-weight: bold;
+}
+.list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:1200px;
+}
+.promotion{
+    flex:none;width:30%;margin:20px ;
+    background-color: lightblue;
+}

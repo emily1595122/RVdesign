@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <title>JavaScript:HTML DOM 網頁畫面操作</title>
+        <!--
+        <style>
+            .text{text-decoration:underline;font-weight: bold;}
+        </style>
+        -->
+    </head>
+    <body>
+        <div>
+            <span onclick="changeToAbout();">關於我</span>
+            <span onclick="changToExps();">學經歷</span>
+        </div>
+        <hr/>
+        <div id="about">大家好,我是Emily</div>
+        <div id="exps" style="display:none">我是景觀系畢業，現在轉職工程師</div>
+        <script>
+            function changeToAbout(){
+                let aboutDiv=document.querySelector("#about");
+                let expsDiv=document.querySelector("#exps");
+                aboutDiv.style.display="block";
+                expsDiv.style.display="none";
+            }
+
+            function changToExps(){
+                // 先取得要操作的標籤
+                let aboutDiv=document.querySelector("#about");
+                let expsDiv=document.querySelector("#exps");
+                // 再對標籤做操作
+                aboutDiv.style.display="none";
+                expsDiv.style.display="block";
+            }
+        </script>
+        <!--
+        <h3>HTML DOM 畫面操作</h3>
+        <div id="content">練習網頁畫面的操作</div>
+        <button onclick="change();">點我</button>
+        <script>
+            function change(){
+                // document.body.innerHTML="新的內容" // 取代全部的內容
+                // 取得標籤物件
+                let elem=document.querySelector("#content"); // 打錯字會出現null
+                // 操作標籤物件
+                elem.innerHTML="對特定的標籤做操作";
+                elem.className="text";  // 加了class=text的屬性,和使用者互動
+                elem.style.fontSize="30px"; // font-size:30px
+                elem.style.color="red";
+            }
+        </script>
+        -->
+
+    </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(197, 206, 192); /*設定背景顏色*/
+}
+
+.header {
+    position: relative; /*設定元素的相對位置*/
+    height: 100vh; /*設定元素高度為100視口高度*/
+    overflow: hidden; /*隱藏元素內容超出部分*/
+    margin-bottom: 20px; /*設定元素下方外邊距*/
+}
+.header-image {
+    position: absolute; /*設定絕對定位*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header-image img {
+    width: 100%; /*滿版*/
+    height: 100%;
+    object-fit: cover; /*調整圖片填滿*/
+}
+.header-text {
+    position: absolute; /*設定絕對定位*/
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /*水平和垂直向左上方移動50%*/
+    text-align: center; /*文字居中*/
+    color: white; /*顏色色彩*/
+}
+.header-text h1 { /*設定h1字體*/
+    font-size: 80px; /*設定字體大小*/
+    margin-bottom: 20px; /*標題下方外邊距*/
+}
+.header-text p {
+    font-size: 30px; /*設定區塊文字大小*/
+}
+
+.container {
+    display: flex; /*彈性佈局*/
+    justify-content: space-between; /*平均分配*/
+    flex-wrap: wrap; /*超出寬度換行*/
+    background-color: rgba(0, 0, 0, 0); /*背景色透明*/
+  }
+  
+  .group {
+    width: calc(33.33% - 10px); /*容器寬度設置並做間距*/
+    margin-bottom: 20px; /*底部間距*/
+    display: flex; 
+    flex-direction: column; /*垂直方向排列*/
+    background-color: white;
+  }
+
+  /* 添加留白 */
+  .group:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .image {
+    width: 100%; /*圖片滿版*/
+    height: 0; 
+    padding-bottom: 100%; /*固定寬高比*/
+    position: relative; /*相對位置*/
+  }
+  
+  .image img {
+    position: absolute; /*絕對位置*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*填滿並保持比例*/
+  }
+
+  .image-text{
+    position: absolute; /*設定絕對定位*/
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* 水平和垂直向左上方移動50% */
+    text-align: center; /*文字居中*/
+    color: white; /*顏色色彩*/
+  }
+  .image-text h1 { /*設定h1字體*/
+    font-size: 40px; /*設定字體大小*/
+    margin-bottom: 20px; /*標題下方外邊距*/
+  }
+
+  .text {
+    text-align: center; /*字體居中*/
+    padding: 10px; /*內邊距*/
+  }
+
+  .last { /*第一容器設定*/
+    width: 100%; /*滿版*/
+    height:400px;
+    margin: auto; /*水平方向居中*/
+    display: flex; /*彈性*/
+  }
+  
+  .photo {
+    width: 55%;
+    position: relative;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .txt {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+  }
+  
+  .txt::before {
+    content: ''; /*在.txt前添加一個偽元素*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+  }

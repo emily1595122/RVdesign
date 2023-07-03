@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <title>JavaScript 流程控制：函式回傳值</title>
+    </head>
+    <body>
+        <script>
+            // return 用來結束函式
+            /*
+            function test(){
+                console.log("Hello");
+                return; // 順序很重要，回傳值 undefined，可在後面加回傳值（任何資料）
+            }
+            let value=test();
+            console.log(value);
+            */
+
+            /*
+            function divide(n1,n2){
+                let result=n1/n2;
+                console.log(result);
+                // return result; // 寫程式建立關聯性
+            }
+            divide(4,2); // 這樣的結果不是很好嗎？
+            // let ans=divide(4,2);
+            // console.log(ans); // 永遠問自己回傳值是什麼
+            */
+
+            function divide(n1,n2){ // 第二種寫法
+                let result=n1/n2;
+                return result;  // 有些適合用回傳值，有些不適合
+            }
+            let ans=divide(4,2);
+            console.log(ans);
+
+            
+        </script>
+    </body>
+</html>
