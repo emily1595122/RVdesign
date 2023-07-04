@@ -4,7 +4,7 @@ body {
 
 .header {
     position: relative; /*設定元素的相對位置*/
-    height: 100vh; /*設定元素高度為100視口高度*/
+    height: 400px; /*設定元素高度為100視口高度*/
     overflow: hidden; /*隱藏元素內容超出部分*/
     margin-bottom: 20px; /*設定元素下方外邊距*/
 }
@@ -90,7 +90,7 @@ body {
 
   .last { /*第一容器設定*/
     width: 100%; /*滿版*/
-    height:400px;
+    height:200px;
     margin: auto; /*水平方向居中*/
     display: flex; /*彈性*/
   }
